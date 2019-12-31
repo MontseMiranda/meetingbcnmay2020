@@ -1,0 +1,121 @@
+---
+title: BARCELONA HOTEL CHOICES - MAY 14TH TO 16TH 2020
+author: "Better travel"
+date: "`r Sys.Date()`"
+output:
+  
+  html_document:
+    css: FORMATO.css
+    highlight: textmate
+    theme: cosmo
+    toc: yes
+    toc_float: yes
+    font-import: http://fonts.googleapis.com/css?family=Barlow Condensed
+    font-family: 'Barlow Condensed'
+
+---
+
+<style>
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    background-color: #33caea;
+}
+</style>
+
+<style>
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    color: #33caea;
+    font-weight: bold;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+    color: white;
+    background-color: #33caea;
+}
+</style>
+
+
+<script> 
+    $(document).ready(function() { 
+    $head = $('#header'); 
+    $head.prepend('<A href = https://www.Bettertravel.dk><img src ="bettertravellogo.jpg" width="200" vspace="50" align="right"></A>') 
+    }); 
+</script> 
+
+
+
+```{r echo=FALSE, message=FALSE,warning=FALSE}
+library(readxl)
+library(dplyr)
+library(knitr)
+```
+
+# ACCOMMODATION
+
+May is always high season in Barcelona. We have offered all the options available located at the city centre. All the properties have a meeting room available for the group, with a set up up to 50 people in theatre style maximum. 
+
+Due to the chosen dates are Friday and Saturday (the departure date will be Sunday) the rates will be higher than normal. 
+
+We recommend to base the quote in the hotel Catalonia Plaza Catalunya because: 
+** *It is located at the city centre (just few steps from Pl Catalunya)
+** *Good value for money 
+** *Plenty of possibiities of restaurants and activities within walking distance from the hotel.
+
+## Main Hotel: Catalonia Plaza Catalunya
+
+<iframe src="Catalonia Plaza Catalunya/cataloniaplazacat.html" frameborder="0" width="100%" height="1280" scrolling="no"></iframe>
+
+</br>
+
+
+## Alternative Hotels {.tabset .tabset-fade .tabset-pills}
+
+### h10 Metropolitan
+
+<iframe src="H10 Metropolitan/H10Metropolitan.html" frameborder="0" width="100%" height="1280" scrolling="no"></iframe>
+
+</br>
+
+### Olivia Plza
+
+<iframe src="Olivia Plaza/Oliviaplaza.html" frameborder="0" width="100%" height="1800" scrolling="no"></iframe>
+
+</br>
+
+### Avenida Palace
+
+<iframe src="Avenida Palace/Avenida palace.html" frameborder="0" width="100%" height="1800" scrolling="no"></iframe>
+
+</br>
+
+
+
+
+## MAP
+
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=12as4hKXa-LwzGdmmQ4baQzldKCGYdzh8" width="640" height="480"></iframe>
+
+
+</br>
+
+*****
+
+
+
+# TERMS AND CONDITIONS
+
+  * Rates valid for 2020
+  
+  * For a group of minimum 40 pax.
+  
+  * VAT included. 
+  
+  * No reservation has been done. Availability upon request.
+  
+*****
+
+
+
+
+

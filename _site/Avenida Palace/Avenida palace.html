@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+  <link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
+  <link rel="stylesheet" href="../fichas_style.css"></link>
+</head>
+
+<body>
+  <div class="activities" style="margin: auto; padding: 0px;"> 
+
+       
+        <span id="stars">Hotel Avenida Palace</span>         <!--estrellas del hotel-->
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star  "></span>    
+        <span><sup></sup></span>      <!-- si el hotel es gran lujo, ..., escribir entre <sub></sub>-->                                            <!--insertar titulo-->
+    <p> Situated in the centre of Barcelona and with more than 65 years’ experience, El Avenida Palace Hotel is an icon of this Catalan city. A warm and friendly service are the main hallmarks of this hotel and one of the main reasons our guests always have fond memories of the times they spend with us. The emblematic hotel, characteristic for an impressive central staircase, offers 151 rooms, 2 luxurious suites and a spectacular terrace with views over the city.
+A commitment on evolution and elegance in tune with our origins and tradition.</p> 
+
+                     <!--insertar el texto-->
+    <hr>
+  </div>
+	<div class="container">
+    <div class="main-img">
+      <img src="avpalace3.jpg" id="current">
+    </div>
+
+    <div class="imgs">                                          <!--insertar las fotos-->
+      <img src="avpalace1.jpg">
+      <img src="avpalace2.jpg">
+      <img src="avpalace3.jpg">
+      <img src="avpalace4.jpg">
+    </div>
+  </div>
+  <hr>
+  
+  <section class="container">
+
+<div class ="one" style="float: left;
+    padding: 10px; background-color: #F5F1E9">
+<p><i class="fa fa-map-o" style="margin: 3px;font-size:20px;color:#EA5933;"></i>   <!--insertar la info relevante a los iconos-->
+<span style="margin: 8px"><b> Location:</b> City centre</p></span>
+<p><i class="fa fa-h-square" style="font-size:20px;color:#EA5933;"></i> 
+<span style="margin: 22px"><b> Category:</b> 4 stars</p></span>
+<p><i class="fa fa-cutlery" style="font-size:20px;color:#EA5933;"></i> 
+<span style="margin: 22px"><b> Restaurants:</b> 1 Restaurant and 1 bar</p></span>
+<p><i class="fa fa-wifi" style="font-size:20px;color:#EA5933;"></i> 
+<span style="margin: 15px"><b> Wifi:</b> Available in rooms and common areas</p></span>
+<p><i class="fa fa-users" style="font-size:20px;color:#EA5933;"></i> 
+<span style="margin: 20px"><b>Nr. Rooms:</b> 154 rooms</p></span>
+
+</div>
+
+<div class ="two" style="float: right width= 40%;
+    padding: 10px; background-color: #F5F1E9; ">
+<p><i class="fa fa-wheelchair" style="font-size:20px;color:#EA5933;"></i>    <!--insertar la info relevante a los iconos-->
+<span style="margin: 20px"><b> Handicapped facilities: </b>No</p></span>
+<p><i class="fa fa-shower" style="font-size:18px;color:#EA5933;"></i> 
+<span style="margin: 20px"><b> Swimmingpool:</b> Yes</p></span>
+<p><i class="fa fa-clock-o" style="font-size:20px;color:#EA5933;"></i> 
+<span style="margin: 20px"><b> Check in/out:</b> 3pm /noon</p></span>
+<p><i class="fa fa-coffee" style="font-size:20px;color:#EA5933;"></i> 
+<span style="margin: 18px"><b> Meeting rooms:</b> max 80 pax</p></span>
+<p><i class="" style="font-size:20px;color:#EA5933;"></i> 
+<span style="margin: 20px;"></span>
+</div>
+</section>
+	<script>
+		const current = document.querySelector('#current');
+const imgs = document.querySelector('.imgs');
+const img = document.querySelectorAll('.imgs img');
+const opacity = 0.6;
+
+// Set first img opacity
+img[0].style.opacity = opacity;
+
+imgs.addEventListener('click', imgClick);
+
+function imgClick(e) {
+  // Reset the opacity
+  img.forEach(img => (img.style.opacity = 1));
+
+  // Change current image to src of clicked image
+  current.src = e.target.src;
+
+  // Add fade in class
+  current.classList.add('fade-in');
+
+  // Remove fade-in class after .5 seconds
+  setTimeout(() => current.classList.remove('fade-in'), 500);
+
+  // Change the opacity to opacity var
+  e.target.style.opacity = opacity;
+}
+
+	</script>
+</body>
+</html>

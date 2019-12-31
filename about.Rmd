@@ -1,0 +1,35 @@
+---
+title: ""
+author: ""
+date: ''
+output:
+ 
+  html_document:
+    css: FORMATO1.css
+    theme: cosmo
+---
+
+<style>
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    color: #33caea;
+    font-weight: bold;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+    color: white;
+    background-color: #33caea;
+}
+</style>
+
+<script> 
+    $(document).ready(function() { 
+    $head = $('#header'); 
+    $head.prepend('<A href = https://www.bettertravel.dk><img src ="bettertravellogo.jpg" width="200" vspace="50" align="right"></A>') 
+    }); 
+</script> 
+
+
+<br>
+
